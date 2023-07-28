@@ -9,10 +9,5 @@
             $users = new Users();
             $users->deleteUser($_POST["user_id"]);
         }
-        // Redirect to avoid form resubmission on page reload
         header("Location: index.php");
-    }
-
-    $users = new Users();
-    $userList = $users->getAllUsers();
-    
+    }  
